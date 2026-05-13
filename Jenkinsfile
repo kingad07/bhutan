@@ -9,9 +9,12 @@ pipeline
       {
         echo "Demo of pipeline from Pol SCM"
       }
-      steps
+      stage ('Edit file')
       {
-        cat "Jenkinsfile"
+        steps
+      {
+        echo "Testing of triggering"
+      }
       }
     }
   }
