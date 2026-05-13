@@ -3,11 +3,25 @@ pipeline
   agent any
   stages
   {
-    stage ('hello')
+    stage ('build')
     {
       steps
       {
-        echo "Demo of pipeline from Pol SCM"
+        echo "Building"
+      }
+    }
+    stage ('test')
+    {
+      steps
+      {
+        echo "Testing"
+      }
+    }
+    stage ('deploy')
+    {
+      steps
+      {
+        echo "Deploying"
       }
     }
   }
