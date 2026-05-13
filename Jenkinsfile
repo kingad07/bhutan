@@ -19,7 +19,7 @@ pipeline
     }
     stage ('deploy')
     {
-      step
+      steps
       {
         echo "Deploying"
       }
