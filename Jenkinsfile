@@ -9,6 +9,10 @@ pipeline
       {
         echo "Demo of pipeline from Pol SCM"
       }
+      steps
+      {
+        cat "Jenkinsfile"
+      }
     }
   }
 }
